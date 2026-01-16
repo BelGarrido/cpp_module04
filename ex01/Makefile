@@ -8,8 +8,8 @@ SRC = main.cpp \
 	animal.cpp \
 	cat.cpp \
 	dog.cpp \
-	wrongCat.cpp \
-	wrongAnimal.cpp
+	brain.cpp \
+	brain.cpp
 
 OBJ = $(SRC:.cpp=.o)
 
