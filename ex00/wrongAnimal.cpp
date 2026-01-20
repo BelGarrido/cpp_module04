@@ -6,7 +6,6 @@ WrongAnimal::WrongAnimal() {
 
 WrongAnimal::~WrongAnimal() {
     std::cout << "WrongAnimal left the terminal" << std::endl;
-    //delete(this);
 }
 
 WrongAnimal::WrongAnimal(const WrongAnimal &original) {
