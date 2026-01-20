@@ -11,7 +11,7 @@ class WrongCat: public WrongAnimal {
         WrongCat &operator=(const WrongCat &original);
         ~WrongCat();
         void makeSound() const;
-        virtual void print(const std::string &message) const;
+        void print(const std::string &message) const;
 };
 
 #endif

@@ -27,5 +27,5 @@ void WrongAnimal::makeSound() const {
 }
 
 void WrongAnimal::print(const std::string &message) const {
-    std::cout << "\031[95m" << _type << message << "\033[0m" << std::endl;
+    std::cout << _type << message << std::endl;
 }
