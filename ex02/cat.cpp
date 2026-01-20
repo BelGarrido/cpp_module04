@@ -13,7 +13,7 @@ Cat::Cat() {
 }
 
 // Copy constructor
-Cat::Cat(const Cat &original) : Animal(original) {
+Cat::Cat(const Cat &original) : AAnimal(original) {
     // First copy the base class part (Animal) to preserve _type etc.
     
     _catBrain = new Brain(*(original._catBrain)); 
@@ -25,7 +25,7 @@ Cat::Cat(const Cat &original) : Animal(original) {
 
 // Copy assignment operator
 Cat& Cat::operator=(const Cat &original) {
-    Animal::operator=(original);
+    AAnimal::operator=(original);
     _catBrain = new Brain(*(original._catBrain));
     // Copy base class attributes (_type etc.)
     return *this;

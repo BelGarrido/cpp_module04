@@ -10,7 +10,7 @@ Dog::Dog() {
     std::cout << &_dogBrain << std::endl;
 }
 
-Dog::Dog(const Dog &original) : Animal(original) {
+Dog::Dog(const Dog &original) : AAnimal(original) {
     _dogBrain = new Brain(*(original._dogBrain)); 
     // Allocate a new Brain for this Dog (deep copy)
     // Dereference original._dogBrain to pass a Brain object to Brain copy constructor
@@ -19,7 +19,7 @@ Dog::Dog(const Dog &original) : Animal(original) {
 }
 
 Dog& Dog::operator=(const Dog &original) {
-    Animal::operator=(original);
+    AAnimal::operator=(original);
     _dogBrain = new Brain(*(original._dogBrain));
     // Copy base class attributes (_type etc.)
     return *this;

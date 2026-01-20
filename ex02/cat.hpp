@@ -4,7 +4,7 @@
 #include "animal.hpp"
 #include "brain.hpp"
 
-class Cat: public Animal {
+class Cat: public AAnimal {
     private:
         const Brain* _catBrain;
     public:
@@ -14,6 +14,7 @@ class Cat: public Animal {
         ~Cat();
         virtual void makeSound() const;
         virtual void print(const std::string &message) const;
+        
 };
 
 #endif

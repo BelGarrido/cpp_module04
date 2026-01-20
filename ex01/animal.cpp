@@ -1,11 +1,12 @@
 #include "animal.hpp"
 
 Animal::Animal() {
-    std::cout << "New animal in the terminal" << std::endl;
+    std::cout << "Animal created" << std::endl;
+    _type = "animal";
 }
 
 Animal::~Animal() {
-    std::cout << "Animal left the terminal" << std::endl;
+    std::cout << "Animal destroyed" << std::endl;
     //delete(this);
 }
 

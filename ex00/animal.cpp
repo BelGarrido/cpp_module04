@@ -2,6 +2,7 @@
 
 Animal::Animal() {
     std::cout << "New animal in the terminal" << std::endl;
+    _type = "animal";
 }
 
 Animal::~Animal() {

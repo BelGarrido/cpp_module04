@@ -3,27 +3,26 @@
 
 void header() {
     std::cout << 
-            "....................................................\n"    
-            "...............|\\      _,,,---,,_...................\n"
-            ".........ZZZzz /,`.-'`'    -.  ;-;;,_...............\n"
-            ".............|,4-  ) )-,_. ,\\ (  `'-'...............\n"
-            "............'---''(_/--'  `-'\\_)....................\n"
-            "....................................................\n";   
-
+        "....................................................\n"    
+        "...............|\\      _,,,---,,_...................\n"
+        ".........ZZZzz /,`.-'`'    -.  ;-;;,_...............\n"
+        ".............|,4-  ) )-,_. ,\\ (  `'-'...............\n"
+        "............'---''(_/--'  `-'\\_)....................\n"
+        "....................................................\n";   
     std::cout << std::endl;
 }
 
 int main()
 {
     header();
-/*  const Animal* j = new Dog();
-    const Animal* i = new Cat();
-    const Cat *micho = new Cat();
+    //const AAnimal* j = new AAnimal();
+    const AAnimal* i = new Cat();
+    /*const Cat *micho = new Cat();
 
     const Cat *copyMicho = new Cat(*micho); */
     std::cout << "*´¯`*.......*´¯`* [ Testing array ] *´¯`*.......*´¯`* \n" << std::endl; 
 
-    const Animal *animals[4];
+    const AAnimal *animals[4];
 
     for(int i = 0; i < 4; i++) {
         if (i % 2 == 0) {
@@ -42,8 +41,8 @@ int main()
     };
 
 /*     delete copyMicho;
-    delete j; //should not create a leak
-    delete i; */
+    delete j; //should not create a leak */
+    delete i; 
 
     std::cout << "*´¯`*......*´¯`* [ Testing deep copy ] *´¯`*.....*´¯`* \n" << std::endl; 
     Cat michi;
