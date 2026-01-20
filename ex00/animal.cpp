@@ -7,15 +7,16 @@ Animal::Animal() {
 
 Animal::~Animal() {
     std::cout << "Animal left the terminal" << std::endl;
-    //delete(this);
 }
 
 Animal::Animal(const Animal &original) {
+    print(" cloned with copy constructor");
     _type = original._type;
 }
 
 Animal& Animal::operator=(const Animal &original) {
     this->_type = original._type;
+    print(" using copy assigment");
     return *this;
 }
 
@@ -28,5 +29,5 @@ void Animal::makeSound() const {
 }
 
 void Animal::print(const std::string &message) const {
-    std::cout << "Animal " << message << std::endl;
+    std::cout << "Animal" << message << std::endl;
 }

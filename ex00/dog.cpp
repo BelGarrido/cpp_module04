@@ -6,10 +6,12 @@ Dog::Dog() {
 }
 
 Dog::Dog(const Dog &original) : Animal(original) {
+    print(" cloned with copy constructor");
 }
 
 Dog& Dog::operator=(const Dog &original) {
     Animal::operator=(original);
+    print(" using copy assigment");
     return *this;
 }
 

@@ -16,7 +16,7 @@ class AAnimal {
 
         virtual void makeSound() const = 0;
         //std::string getType() const;
-                virtual void print(const std::string &message) const;
+        virtual void print(const std::string &message) const;
 } ;
 
 #endif

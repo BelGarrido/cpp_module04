@@ -6,10 +6,12 @@ Cat::Cat() {
 }
 
 Cat::Cat(const Cat &original) : Animal(original) {
+    print(" cloned with copy constructor");
 }
 
 Cat& Cat::operator=(const Cat &original) {
     Animal::operator=(original);
+    print(" using copy assigment");
     return *this;
 }
 

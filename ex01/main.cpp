@@ -16,13 +16,10 @@ void header() {
 int main()
 {
     header();
-/*  const Animal* j = new Dog();
-    const Animal* i = new Cat();
-    const Cat *micho = new Cat();
-
-    const Cat *copyMicho = new Cat(*micho); */
-    std::cout << "*´¯`*.......*´¯`* [ Testing array ] *´¯`*.......*´¯`* \n" << std::endl; 
-
+    Animal test;
+    std::cout << std::endl; 
+    
+    std::cout << "\033[1;96m" << "*´¯`*..*´¯`* [ Testing Array ] *´¯`*..*´¯`* " << "\033[0m" << std::endl; 
     const Animal *animals[4];
 
     for(int i = 0; i < 4; i++) {
@@ -36,19 +33,26 @@ int main()
         }
     };
 
+    std::cout << "\033[1;96m" << "*´¯`*..*´¯`* [ Testing Destructor ] *´¯`*..*´¯`* " << "\033[0m" << std::endl; 
     for(int i = 0; i < 4; i++) {
         delete animals[i];
         std::cout << std::endl; 
     };
 
-/*     delete copyMicho;
-    delete j; //should not create a leak
-    delete i; */
-
-    std::cout << "*´¯`*......*´¯`* [ Testing deep copy ] *´¯`*.....*´¯`* \n" << std::endl; 
+    std::cout << "\033[1;96m" << "*´¯`*..*´¯`* [ Testing Deep Copy ] *´¯`*..*´¯`* " << "\033[0m" << std::endl; 
     Cat michi;
     std::cout << std::endl; 
+    
     Cat misi(michi);
-    std::cout << std::endl; 
+    std::cout << std::endl;
+
+    std::cout << "\033[1;96m" << "*´¯`*..*´¯`* [ Testing Deep Copy II ] *´¯`*..*´¯`* " << "\033[0m" << std::endl; 
+    Dog basic;
+    {
+      Dog tmp = basic;
+    }
+    std::cout << std::endl;
+    
+    std::cout << "\033[1;96m" << "*´¯`*..*´¯`* [ Testing Destructors ] *´¯`*..*´¯`* " << "\033[0m" << std::endl; 
     return 0;
 }

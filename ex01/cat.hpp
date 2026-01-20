@@ -13,7 +13,7 @@ class Cat: public Animal {
         Cat &operator=(const Cat &original);
         ~Cat();
         virtual void makeSound() const;
-        virtual void print(const std::string &message) const;
+        void print(const std::string &message) const;
 };
 
 #endif

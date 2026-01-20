@@ -1,5 +1,4 @@
-#ifndef WRONGANIMAL_HPP
-#define WRONGANIMAL_HPP
+#pragma once
 
 #include <string>
 #include <iostream>
@@ -20,5 +19,3 @@ class WrongAnimal {
         std::string getType() const;
 
 } ;
-
-#endif
